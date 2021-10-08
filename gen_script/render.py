@@ -29,13 +29,13 @@ import argparse
 #%% Argument parser
 parser = argparse.ArgumentParser(description = 'parse some parameters')
 parser.add_argument("models", nargs='+', help="Enter the names of the models seperated by a space")
-#args = parser.parse_args()
-args = parser.parse_args('left_gear'.split())
+args = parser.parse_args()
+#args = parser.parse_args('left_gear'.split())
 
 n_models = len(args.models)
 
 
-#%%
+#%% Create the directories
 rospy.init_node('data_render_gazebo')
 rate = rospy.Rate(0.5)
 bridge = CvBridge()
@@ -47,7 +47,7 @@ if not os.path.exists('depth'):
 if not os.path.exists('meta'):
     os.makedirs('meta')    
     
-#%%
+#%% Function to set camera position and pose
 def set_cam_state_gazebo(camPos, camTwist):
     # Set cam state in gazebo
     camstate = stateGZ('kinect_ros::link', camPos, camTwist, 'world' )
@@ -61,7 +61,7 @@ def set_cam_state_gazebo(camPos, camTwist):
            
 
 
-#%%
+#%% Function to convert between Image types
 def convert_types(img, orig_min, orig_max, tgt_min, tgt_max, tgt_type):
 
     #info = np.finfo(img.dtype) # Get the information of the incoming image type
@@ -73,7 +73,7 @@ def convert_types(img, orig_min, orig_max, tgt_min, tgt_max, tgt_type):
     #cv2.imshow("Window", img)
     return img_out
 
-#%% RGB,Depth duplicate
+#%% Check for RGB,Depth duplicate Images
 def check_dup():
     rgb_duplicate = True                     
     while rgb_duplicate:
