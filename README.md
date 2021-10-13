@@ -80,7 +80,7 @@ Project funding was received from European Union's Horizon 2020 research and inn
 Please cite the work if you use this repository in your publications:
 ```
 @InProceedings{Saad_2021_ICAR,
-author = {Saad Ahmad1,†, Kulunu Samarawickrama1,†, Esa Rahtu2 and Roel Pieters1},
+author = {Saad Ahmad, Kulunu Samarawickrama, Esa Rahtu and Roel Pieters},
 title = {Automatic Dataset Generation From CAD for Vision Based Grasping},
 booktitle = {20th International Conference on Advanced Robotics (ICAR)},
 month = {December},
