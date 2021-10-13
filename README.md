@@ -2,8 +2,9 @@
 
 PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
 
-video: https://youtu.be/DwlWrxc3Wis
-[![Alternate Text]({assets/images/intro.png})]({https://youtu.be/DwlWrxc3Wis} "Link Title")
+
+[![Automatic Dataset Generation From CAD for Vision Based Grasping HD](https://res.cloudinary.com/marcomontalbano/image/upload/v1634114596/video_to_markdown/images/youtube--DwlWrxc3Wis-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=DwlWrxc3Wis "Automatic Dataset Generation From CAD for Vision Based Grasping HD")
+
 
 ## Requirements
 
