@@ -1,14 +1,9 @@
 This is the official source code for Automatic Dataset Generation From CAD for Vision-Based Grasping, ICAR, 2021.
+
 PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
+
 video: https://youtu.be/DwlWrxc3Wis
 
-
-## Introduction
-This is a gazebo based pipeline to generate simulated rgb/depth image datasets. A Simulated dataset is a convienient approach to obtain customized data for deep learning projects, compared to real data. In this approach, A Kinect camera is simulated around the origin of the gazebo world (view sampling) according to a pre-defined algorithm and images are captured and saved.
-
-![View Sampling procedure](/assets/images/view_sampling.jpg "View Sampling procedure")
-
-Watch the video on [Youtube](https://www.youtube.com/watch?v=Fa-J-9h2a0w​ "Dataset Generation in Gazebo Simulator").
 
 ## Requirements
 
