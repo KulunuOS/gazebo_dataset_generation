@@ -77,7 +77,7 @@ Project funding was received from European Union's Horizon 2020 research and inn
 
 ## Citations
 
-Please cite [PVN3D](https://arxiv.org/abs/1911.04231) if you use this repository in your publications:
+Please cite the work if you use this repository in your publications:
 ```
 @InProceedings{Saad_2021_ICAR,
 author = {Saad Ahmad1,†, Kulunu Samarawickrama1,†, Esa Rahtu2 and Roel Pieters1},
