@@ -1,4 +1,7 @@
-### This is the official source code for Automatic Dataset Generation From CAD for Vision-Based Grasping, ICAR, 2021.
+
+## Automatic Dataset Generation From CAD for Vision Based Grasping
+
+This is the official source code for Automatic Dataset Generation From CAD for Vision-Based Grasping, ICAR, 2021.
 
 PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
 
@@ -67,3 +70,20 @@ PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
     $ python render.py models <link_name>
     ~~~
 3. The rgb and depth files will be saved to /data_generation/gen_script directory in the folders /rgb and /depth respectively
+
+## Acknowledgement
+
+Project funding was received from European Union's Horizon 2020 research and innovation programme, grant agreement no. 871252 (METRICS) and no. 871449 (OpenDR), and from Helsinki Institute of Physics' Technology Programme (project; ROBOT). The authors wish to acknowledge CSC - IT Center for Science, Finland, for computational resources.
+
+## Citations
+
+Please cite [PVN3D](https://arxiv.org/abs/1911.04231) if you use this repository in your publications:
+```
+@InProceedings{Saad_2021_ICAR,
+author = {Saad Ahmad1,†, Kulunu Samarawickrama1,†, Esa Rahtu2 and Roel Pieters1},
+title = {Automatic Dataset Generation From CAD for Vision Based Grasping},
+booktitle = {20th International Conference on Advanced Robotics (ICAR)},
+month = {December},
+year = {2021}
+}
+```
