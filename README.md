@@ -1,9 +1,9 @@
-This is the official source code for Automatic Dataset Generation From CAD for Vision-Based Grasping, ICAR, 2021.
+### This is the official source code for Automatic Dataset Generation From CAD for Vision-Based Grasping, ICAR, 2021.
 
 PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
 
 video: https://youtu.be/DwlWrxc3Wis
-
+[![Alternate Text]({assets/images/intro.png})]({https://youtu.be/DwlWrxc3Wis} "Link Title")
 
 ## Requirements
 
@@ -20,7 +20,7 @@ video: https://youtu.be/DwlWrxc3Wis
 2. Clone the repo into your src folder :
     ~~~
     $ cd catkin_ws/src
-    $ git clone --branch object_classification https://github.com/KulunuOS/gazebo_dataset_generation.git
+    $ git clone https://github.com/KulunuOS/gazebo_dataset_generation.git
     ~~~
 
 3. Build the workspace
