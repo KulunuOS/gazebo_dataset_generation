@@ -24,7 +24,7 @@ PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
 2. Clone the repo into your src folder :
     ~~~
     $ cd catkin_ws/src
-    $ git clone https://github.com/KulunuOS/gazebo_dataset_generation.git
+    $ git clone https://github.com/KulunuOS/gazebo_dataset_generation.git .
     ~~~
 
 3. Build the workspace
