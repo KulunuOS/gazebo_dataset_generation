@@ -19,7 +19,7 @@ PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
 ## Installation
 1. Create a catkin_ws in your working directory :
     ~~~
-    $ mkdir -p ~/catrkin_ws/src
+    $ mkdir -p ~/catkin_ws/src
     ~~~
 2. Clone the repo into your src folder :
     ~~~
