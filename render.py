@@ -39,9 +39,7 @@ parser.add_argument("models", nargs='+', help="Enter the names of the models sep
 #args = parser.parse_args('bottom_casing left_gear'.split())
 args = parser.parse_args()
 n_models = len(args.models)
-print(n_models)
-print(args.models[0])
-print(args.models[1])
+print('Generating data for '+str(n_models)+' selected models')
 
 #%% Initialize ros
 rospy.init_node('data_render_gazebo', anonymous = True)
@@ -279,6 +277,7 @@ def pcl_2_binary_mask(obj_cam_T,n_models, all_points):
 #%% Main program
 
 # convert the meshes to pointclouds 
+print('Generating the pointclouds for all models. hold on , This could take few minutes ...')
 all_points, all_pclds = mesh2pcld(n_models)
 
 sample_num = 0
