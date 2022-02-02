@@ -199,12 +199,17 @@
       <uri>model://left_gear</uri>
       <name>left_gear</name>
       <pose>0 0 0.84 0 0 0</pose>
+      <static>1</static>
     </include> 
     
-    
-    
-    
+    <include>
+      <uri>model://bottom_casing</uri>
+      <name>bottom_casing</name>
+      <pose>0.03 0.03 0.84 0 0 0</pose>
+      <static>1</static>
+    </include> 
     <!--            -->
+    
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose frame=''>2.16101 -0.608536 1.91511 0 0.589796 2.59702</pose>
