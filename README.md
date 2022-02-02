@@ -1,15 +1,21 @@
 
 ## Automatic Dataset Generation From CAD for Vision Based Grasping
+This script demonstrates the generation of a synthetic dataset of a multi-object scenario using CAD files.
 
-This is the official source code for Automatic Dataset Generation From CAD for Vision-Based Grasping, ICAR, 2021.
+The dataset consists of the following data of a simulate scene:
 
-PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
+- RGB images
+- Depth Images
+- Pose information
+- Binary Mask
 
+This is the official source code for the [paper](https://ieeexplore.ieee.org/abstract/document/9659336) Automatic Dataset Generation From CAD for Vision-Based Grasping, ICAR, 2021.
 
 [![Automatic Dataset Generation From CAD for Vision Based Grasping HD](https://res.cloudinary.com/marcomontalbano/image/upload/v1634114596/video_to_markdown/images/youtube--DwlWrxc3Wis-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=DwlWrxc3Wis "Automatic Dataset Generation From CAD for Vision Based Grasping HD")
 
 
 ## Requirements
+The script is tested on following specifications
 
 - Ubuntu 20.04 and ROS Noetic
 - Gazebo multi-robot simulator, version 11.5.1
@@ -44,13 +50,25 @@ PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
     $ conda activate open3d
     ~~~
 
-6. Ḿodify the gazebo world according to the preference of your dataset.
-    
-    Include the mesh files, model.sdf, model.config files of the objects in your dataset in data_generation/models folder
-    
-    Include the following in data_generation/Worlds/metrics.world file according to preference
+## Data Generation
 
-    An example of loading the object 'left_gear' on to the table is as below :
+1. launch the gazebo world again as in step 4.
+
+2. Run the generating script in a seperate terminal in parallel with gazebo world launched previously. The script should run in  the open3d conda environment.  
+    ~~~
+    $ cd ~/catkin_ws/src                          
+    $ python render.py bottom_casing left_gear
+    ~~~
+3. The dataset will be generated inside catkin_ws/src/dataset folder.  
+
+## Generate dataset from your own models
+
+Ḿodify the gazebo world according to the preference of your dataset.
+    
+- Include the mesh files, model.sdf, model.config files of the objects in your dataset in data_generation/models folder
+- Include your models in gazebo world file (catkin_ws/src/data_generation/Worlds/metrics.world ).
+
+An example of loading the object 'left_gear' on to the table is as below :
     ~~~
     <include>
       <uri>model://left_gear</uri>
@@ -59,17 +77,10 @@ PDF: https://research.tuni.fi/uploads/2021/10/5f29a62c-icar_2021_dataset.pdf
     </include> 
     ~~~
 
-
-## Data Generation
-
-1. launch the gazebo world again as in step 4 and check if the objects are placed according to your preference.
-
-2. Run the generating script in a seperate terminal in parallel with gazebo world launched previously  
+- Remember to Include your models as arguments when running the script
     ~~~
-    $ cd ~/data_generation/gen_script                          
-    $ python render.py models <link_name>
+     $ python render.py <custom_model> 
     ~~~
-3. The rgb and depth files will be saved to /data_generation/gen_script directory in the folders /rgb and /depth respectively
 
 ## Acknowledgement
 
