@@ -69,6 +69,7 @@ The script is tested on following specifications
 - Include your models in gazebo world file (catkin_ws/src/data_generation/Worlds/metrics.world ).
 
 An example of loading the object 'left_gear' on to the table is as below :
+    
     ~~~
     <include>
       <uri>model://left_gear</uri>
@@ -76,7 +77,6 @@ An example of loading the object 'left_gear' on to the table is as below :
       <pose>0 0 0.84 0 0 0</pose>
     </include> 
     ~~~
-
 - Remember to Include your models as arguments when running the script
     ~~~
      $ python render.py <custom_model> 
