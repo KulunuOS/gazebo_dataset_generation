@@ -98,7 +98,7 @@ def check_dup():
     while rgb_duplicate:
         print('Subscribing to rgb topics...')
         img_msg = rospy.wait_for_message('/kinect1/color/image_raw', Image, timeout = 3)
-        cv_image = bridge.imgmsg_to_cv2(img_msg, desired_encoding='rgb8')
+        cv_image = bridge.imgmsg_to_cv2(img_msg, desired_encoding='bgr8')
         #cv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
 
         if sample_num > 0:  
