@@ -70,13 +70,12 @@ The script is tested on following specifications
 
 An example of loading the object 'left_gear' on to the table is as below :
     
-    ~~~
     <include>
       <uri>model://left_gear</uri>
       <name>left_gear</name>
       <pose>0 0 0.84 0 0 0</pose>
     </include> 
-    ~~~
+    
 - Remember to Include your models as arguments when running the script
     ~~~
      $ python render.py <custom_model> 
