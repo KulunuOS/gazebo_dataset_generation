@@ -52,14 +52,15 @@ The script is tested on following specifications
 
 ## Data Generation
 
-1. launch the gazebo world again as in step 4.
+6. launch the gazebo world again as in step 4.
 
-2. Run the generating script in a seperate terminal in parallel with gazebo world launched previously. The script should run in  the open3d conda environment.  
+7. Run the generating script in a seperate terminal in parallel with gazebo world launched previously. The script should run in  the open3d conda environment.  
     ~~~
     $ cd ~/catkin_ws/src                          
     $ python render.py bottom_casing left_gear
     ~~~
-3. The dataset will be generated inside catkin_ws/src/dataset folder.  
+
+The dataset will be generated inside catkin_ws/src/dataset folder.  
 
 ## Generate dataset from your own models
 
